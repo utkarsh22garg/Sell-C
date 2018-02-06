@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/view_container"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:id="@+id/img_header_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/linearLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/wooden" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:id="@+id/linearLayout"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/img_profile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            app:srcCompat="@drawable/man" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_weight="0.16"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            android:text="User"
+            android:textColor="#FFF"
+            android:textSize="25dp" />
+
+
+    </LinearLayout>
+</RelativeLayout>
